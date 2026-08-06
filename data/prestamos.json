@@ -1,0 +1,13 @@
+[
+    {
+        "id": 1,
+        "usuario_id": 1,
+        "herramienta_id": 1,
+        "cantidad": 2,
+        "fecha_inicio": "2026-08-06",
+        "fecha_estimada": "2026-08-13",
+        "fecha_devolucion": null,
+        "estado": "Activo",
+        "observaciones": "Entregar lunes"
+    }
+]

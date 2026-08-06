@@ -1,0 +1,18 @@
+[
+    {
+        "id": 1,
+        "nombres": "Pepito",
+        "apellidos": "perez",
+        "telefono": "6784581243658",
+        "direccion": "cra 12",
+        "tipo": "Administrador"
+    },
+    {
+        "id": 2,
+        "nombres": "Oliver",
+        "apellidos": "Patiño\\",
+        "telefono": "414124123",
+        "direccion": "cra 19",
+        "tipo": "Usuario"
+    }
+]

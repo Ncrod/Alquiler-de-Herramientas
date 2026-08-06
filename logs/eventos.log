@@ -1,0 +1,9 @@
+2026-08-06 15:24:40 - INFO - El programa inició
+2026-08-06 15:24:40 - INFO - Herramienta 'Taladro' creada - Usuario: 1
+2026-08-06 15:24:40 - ADVERTENCIA - La podadora tiene stock bajo
+2026-08-06 15:24:40 - ERROR - Stock insuficiente: pidieron 5 y hay 2 - Usuario: 3
+2026-08-06 15:37:06 - INFO - Herramienta 'Taladro' creada con id 1
+2026-08-06 17:01:01 - INFO - Usuario 'Pepito perez' creado con id 1
+2026-08-06 17:02:15 - INFO - Usuario 'Oliver Patiño\' creado con id 2
+2026-08-06 17:45:17 - ERROR - Herramienta con id 5 no encontrada al intentar crear un préstamo
+2026-08-06 17:45:54 - INFO - Prestamo #1: 2 de 'Taladro' - Usuario: 1
