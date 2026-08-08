@@ -10,9 +10,17 @@
     {
         "id": 2,
         "nombres": "Oliver",
-        "apellidos": "Patiño\\",
+        "apellidos": "Patiño",
         "telefono": "414124123",
         "direccion": "cra 19",
+        "tipo": "Usuario"
+    },
+    {
+        "id": 3,
+        "nombres": "Nicolas",
+        "apellidos": "Rodriguez",
+        "telefono": "413413412",
+        "direccion": "cra 12",
         "tipo": "Usuario"
     }
 ]

@@ -1,0 +1,26 @@
+[
+    {
+        "id": 1,
+        "usuario_id": 2,
+        "herramienta_id": 1,
+        "cantidad": 5,
+        "fecha": "2026-08-08",
+        "estado": "Rechazada"
+    },
+    {
+        "id": 2,
+        "usuario_id": 2,
+        "herramienta_id": 1,
+        "cantidad": 1,
+        "fecha": "2026-08-08",
+        "estado": "Aprobada"
+    },
+    {
+        "id": 3,
+        "usuario_id": 3,
+        "herramienta_id": 1,
+        "cantidad": 2,
+        "fecha": "2026-08-08",
+        "estado": "Aprobada"
+    }
+]

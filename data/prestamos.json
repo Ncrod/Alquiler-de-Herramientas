@@ -9,5 +9,27 @@
         "fecha_devolucion": null,
         "estado": "Activo",
         "observaciones": "Entregar lunes"
+    },
+    {
+        "id": 2,
+        "usuario_id": 3,
+        "herramienta_id": 1,
+        "cantidad": 2,
+        "fecha_inicio": "2026-08-08",
+        "fecha_estimada": "2026-08-15",
+        "fecha_devolucion": null,
+        "estado": "Activo",
+        "observaciones": "Devolver el martes"
+    },
+    {
+        "id": 3,
+        "usuario_id": 3,
+        "herramienta_id": 1,
+        "cantidad": 2,
+        "fecha_inicio": "2026-08-08",
+        "fecha_estimada": "2026-08-15",
+        "fecha_devolucion": null,
+        "estado": "Activo",
+        "observaciones": "Entregar miercoles"
     }
 ]

@@ -3,8 +3,16 @@
         "id": 1,
         "nombre": "Taladro",
         "categoria": "Construccion",
-        "cantidad": 3,
+        "cantidad": 4,
         "estado": "Activa",
-        "valor": 90000
+        "valor": 80000
+    },
+    {
+        "id": 2,
+        "nombre": "Martillo",
+        "categoria": "Construccion",
+        "cantidad": 6,
+        "estado": "Activa",
+        "valor": 50000
     }
 ]
