@@ -55,4 +55,4 @@ def confirmar(mensaje):
 
 
 def pausar():
-    input("\nPresione Enter para continuar...")
+    input("\nPresione Enter para continuar....")
