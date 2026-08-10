@@ -7,8 +7,9 @@ RUTA_LOGS = "logs/eventos.log"
 RUTA_SOLICITUDES = "data/solicitudes.json"
 
 # Constantes de herramientas
-CATEGORIAS = ["Construccion", "Jardineria", "Electricidad", "pintura"]
-ESTADOS_HERRAMIENTA = ["Activa", "Devuelto", "En mantenimiento"]
+CATEGORIAS = ["Construccion", "Jardineria", "Electricidad", "Pintura"]
+ESTADOS_HERRAMIENTA = ["Activa", "Devuelto", "En mantenimiento", "Inactiva"]
+ESTADO_INACTIVA = "Inactiva"
 STOCK_MINIMO = 3
 
 # Constantes de usuarios
