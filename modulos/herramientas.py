@@ -1,6 +1,4 @@
-# CRUD de herramientas
-
-from config import RUTA_HERRAMIENTAS, CATEGORIAS, ESTADOS_HERRAMIENTA
+from config import RUTA_HERRAMIENTAS, CATEGORIAS, ESTADOS_HERRAMIENTA, ESTADO_INACTIVA
 from modulos import almacenamiento
 from modulos import utilidades
 from modulos import logs
@@ -129,7 +127,7 @@ def eliminar():
     opcion = utilidades.pedir_entero("Opcion: ", 1)
 
     if opcion == 1:
-        herramienta["estado"] = "Inactiva"
+        herramienta["estado"] = ESTADO_INACTIVA
         almacenamiento.guardar(RUTA_HERRAMIENTAS, lista)
         print("Herramienta inactivada.")
         logs.info("Herramienta id " + str(id_buscado) + " inactivada")

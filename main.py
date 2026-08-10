@@ -64,7 +64,7 @@ def menu_herramientas(usuario):
         utilidades.pausar()
 
 
-def menu_usuarios(usuario):
+def menu_crud_usuarios(usuario):
     while True:
         print("\n===== USUARIOS =====")
         print("1. Crear")
@@ -167,7 +167,7 @@ def menu_admin(usuario):
         if opcion == 1:
             menu_herramientas(usuario)
         elif opcion == 2:
-            menu_usuarios(usuario)
+            menu_crud_usuarios(usuario)
         elif opcion == 3:
             menu_prestamos(usuario)
         elif opcion == 4:

@@ -1,5 +1,3 @@
-# Registro de eventos y errores
-
 import os
 from datetime import datetime
 from config import RUTA_LOGS

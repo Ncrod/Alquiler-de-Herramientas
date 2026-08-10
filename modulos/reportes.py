@@ -129,7 +129,7 @@ def mas_solicitadas():
     print("\n--- HERRAMIENTAS MAS SOLICITADAS ---")
     puesto = 1
     for r in ranking:
-        print(str(puesto) + ". " + r["nombre"] + " | prestada " + str(r["total"]) + " veces")
+        print(str(puesto) + ". " + r["nombre"] + " | " + str(r["total"]) + " unidades prestadas")
         puesto = puesto + 1
 
 

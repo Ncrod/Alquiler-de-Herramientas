@@ -57,7 +57,7 @@ def registrar():
                    ": pidieron " + str(cantidad) + " y hay " + str(herramienta["cantidad"]))
         return
 
-    observaciones = utilidades.pedir_texto("Observaciones (opcional): ").strip()
+    observaciones = input("Observaciones (opcional): ").strip()
 
     hoy = datetime.now()
     fecha_inicio = hoy.strftime("%Y-%m-%d")

@@ -77,6 +77,15 @@ def crear_solicitud(usuario):
 
     cantidad = utilidades.pedir_entero("Cantidad: ", 1)
 
+    if cantidad > herramienta["cantidad"]:
+        print("No hay suficiente stock disponible. Disponibles: " +
+              str(herramienta["cantidad"]) + ".")
+        logs.advertencia("Solicitud rechazada por stock insuficiente de '" +
+                         herramienta["nombre"] + "': pidieron " + str(cantidad) +
+                         " y hay " + str(herramienta["cantidad"]),
+                         usuario=usuario["id"])
+        return
+
     solicitud = {
         "id": utilidades.generar_id(solicitudes),
         "usuario_id": usuario["id"],

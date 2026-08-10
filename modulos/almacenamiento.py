@@ -1,5 +1,3 @@
-# Leer/escribir JSON (funciones genéricas)
-
 import json
 import os
 
