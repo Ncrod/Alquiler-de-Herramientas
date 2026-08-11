@@ -8,8 +8,13 @@ from modulos import reportes
 from modulos import permisos
 from config import RUTA_USUARIOS
 import os
+import sys
 
 os.system("")  # Activa los colores ANSI en la consola de Windows
+
+# Evita UnicodeEncodeError con los iconos en consolas de Windows
+if hasattr(sys.stdout, "reconfigure"):
+    sys.stdout.reconfigure(encoding="utf-8", errors="replace")
 
 RESET = "\033[0m"
 NEGRITA = "\033[1m"
@@ -63,7 +68,7 @@ def crear_admin_inicial():
 
 def menu_herramientas(usuario):
     while True:
-        titulo("HERRAMIENTAS", AMARILLO)
+        titulo("\U0001F527 HERRAMIENTAS", AMARILLO)
         opcion_menu(1, "Crear")
         opcion_menu(2, "Listar")
         opcion_menu(3, "Buscar")
@@ -93,7 +98,7 @@ def menu_herramientas(usuario):
 
 def menu_crud_usuarios(usuario):
     while True:
-        titulo("USUARIOS", MAGENTA)
+        titulo("\U0001F464 USUARIOS", MAGENTA)
         opcion_menu(1, "Crear")
         opcion_menu(2, "Listar")
         opcion_menu(3, "Buscar")
@@ -123,7 +128,7 @@ def menu_crud_usuarios(usuario):
 
 def menu_prestamos(usuario):
     while True:
-        titulo("PRESTAMOS", AZUL)
+        titulo("\U0001F4CB PRESTAMOS", AZUL)
         opcion_menu(1, "Registrar prestamo")
         opcion_menu(2, "Registrar devolucion")
         opcion_menu(3, "Listar todos")
@@ -150,7 +155,7 @@ def menu_prestamos(usuario):
 
 def menu_reportes(usuario):
     while True:
-        titulo("REPORTES", VERDE)
+        titulo("\U0001F4CA REPORTES", VERDE)
         opcion_menu(1, "Herramientas con stock bajo")
         opcion_menu(2, "Prestamos activos y vencidos")
         opcion_menu(3, "Historial de un usuario")
@@ -180,7 +185,7 @@ def menu_reportes(usuario):
 
 def menu_admin(usuario):
     while True:
-        titulo("MENU ADMINISTRADOR - " + usuario["nombres"], CYAN)
+        titulo("\U0001F6E0 MENU ADMINISTRADOR - " + usuario["nombres"], CYAN)
         opcion_menu(1, "Herramientas")
         opcion_menu(2, "Usuarios")
         opcion_menu(3, "Prestamos")
@@ -207,7 +212,7 @@ def menu_admin(usuario):
 
 def menu_usuarios(usuario):
     while True:
-        titulo("MENU USUARIO - " + usuario["nombres"], MAGENTA)
+        titulo("\U0001F464 MENU USUARIO - " + usuario["nombres"], MAGENTA)
         opcion_menu(1, "Ver herramientas disponibles")
         opcion_menu(2, "Buscar herramienta")
         opcion_menu(3, "Solicitar una herramienta")
@@ -258,7 +263,7 @@ def mostrar_mi_historial(usuario):
 
 
 def main():
-    titulo("PRESTAMO DE HERRAMIENTAS", CYAN)
+    titulo("\U0001F527 PRESTAMO DE HERRAMIENTAS", CYAN)
 
     logs.info("Programa iniciado")
     crear_admin_inicial()

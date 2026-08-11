@@ -17,10 +17,10 @@ def stock_bajo():
             bajas.append(h)
 
     if len(bajas) == 0:
-        print("\nTodas las herramientas tienen stock suficiente.")
+        print("\U00002705 \nTodas las herramientas tienen stock suficiente.")
         return
 
-    print("\n--- STOCK BAJO (menos de " + str(STOCK_MINIMO) + ") ---")
+    print("\U0001F4C9 \n--- STOCK BAJO (menos de " + str(STOCK_MINIMO) + ") ---")
     for h in bajas:
         print(str(h["id"]) + ". " + h["nombre"] +
               " | quedan: " + str(h["cantidad"]) +
@@ -50,7 +50,7 @@ def prestamos_activos_y_vencidos():
         for p in activos:
             prestamos.mostrar_uno(p, herramientas)
 
-    print("\n--- PRESTAMOS VENCIDOS (" + str(len(vencidos)) + ") ---")
+    print("\n--- \U000023F0 PRESTAMOS VENCIDOS (" + str(len(vencidos)) + ") ---")
     if len(vencidos) == 0:
         print("No hay prestamos vencidos.")
     else:
@@ -126,7 +126,7 @@ def mas_solicitadas():
 
     ranking.sort(key=lambda x: x["total"], reverse=True)
 
-    print("\n--- HERRAMIENTAS MAS SOLICITADAS ---")
+    print("\n--- \U0001F3C6 HERRAMIENTAS MAS SOLICITADAS ---")
     puesto = 1
     for r in ranking:
         print(str(puesto) + ". " + r["nombre"] + " | " + str(r["total"]) + " unidades prestadas")
@@ -160,7 +160,7 @@ def usuarios_mas_activos():
 
     ranking.sort(key=lambda x: x["total"], reverse=True)
 
-    print("\n--- USUARIOS MAS ACTIVOS ---")
+    print("\n--- \U0001F3C6 USUARIOS MAS ACTIVOS ---")
     puesto = 1
     for r in ranking:
         print(str(puesto) + ". " + r["nombre"] + " | " + str(r["total"]) + " herramientas solicitadas")

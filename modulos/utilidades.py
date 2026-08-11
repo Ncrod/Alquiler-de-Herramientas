@@ -3,7 +3,7 @@ def pedir_texto(mensaje):
         texto = input(mensaje).strip()
         if texto != "":
             return texto
-        print("No se puede dejar vacio. Intente de nuevo.")
+        print("\U000026A0 No se puede dejar vacio. Intente de nuevo.")
 
 
 def pedir_entero(mensaje, minimo=0):
@@ -12,9 +12,9 @@ def pedir_entero(mensaje, minimo=0):
             numero = int(input(mensaje))
             if numero >= minimo:
                 return numero
-            print(f"El numero debe ser mayor o igual a {minimo}. Intente de nuevo.")
+            print(f"\U000026A0 El numero debe ser mayor o igual a {minimo}. Intente de nuevo.")
         except ValueError:
-            print("Debe ingresar un numero entero. Intente de nuevo.")
+            print("\U000026A0 Debe ingresar un numero entero. Intente de nuevo.")
 
 
 def pedir_opcion(mensaje, opciones):
@@ -24,7 +24,7 @@ def pedir_opcion(mensaje, opciones):
 
     numero = pedir_entero("Escoja una opcion: ", 1)
     while numero > len(opciones):
-        print("Esa opcion no existe.")
+        print("\U000026A0 Esa opcion no existe.")
         numero = pedir_entero("Escoja una opcion: ", 1)
 
     return opciones[numero - 1]

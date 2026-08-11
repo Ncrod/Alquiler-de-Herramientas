@@ -25,7 +25,7 @@ def crear():
     lista.append(usuario)
     almacenamiento.guardar(RUTA_USUARIOS, lista)
 
-    print("Usuario creado con id " + str(usuario["id"]) + ".")
+    print("\U00002705 Usuario creado con id " + str(usuario["id"]) + ".")
     logs.info("Usuario '" + nombres + " " + apellidos + "' creado con id " + str(usuario["id"]))
 
 
@@ -51,7 +51,7 @@ def buscar():
     lista = almacenamiento.cargar(RUTA_USUARIOS)
 
     if len(lista) == 0:
-            print("\nNo hay usuarios registrados.")
+            print("\U0001F4EC \nNo hay usuarios registrados.")
             return
 
     texto = utilidades.pedir_texto("Buscar (nombre, apellido o telefono): ").lower()
@@ -84,7 +84,7 @@ def actualizar():
     usuario = utilidades.buscar_por_id(lista, id_buscado)
 
     if usuario is None:
-        print("No existe un usuario con ese id.")
+        print("\U0000274C No existe un usuario con ese id.")
         logs.error("Intento de actualizar usuario inexistente id " + str(id_buscado))
         return
 
@@ -110,7 +110,7 @@ def actualizar():
 
     almacenamiento.guardar(RUTA_USUARIOS, lista)
 
-    print("Usuario actualizado.")
+    print("\U0000270F Usuario actualizado.")
     logs.info("Usuario id " + str(id_buscado) + " actualizado")
 
 
@@ -118,7 +118,7 @@ def eliminar():
     lista = almacenamiento.cargar(RUTA_USUARIOS)
 
     if len(lista) == 0:
-        print("\nNo hay usuarios registrados.")
+        print("\U0001F4EC \nNo hay usuarios registrados.")
         return
 
     listar()
@@ -135,7 +135,7 @@ def eliminar():
     if utilidades.confirmar("Seguro que desea eliminar a '" + nombre_completo + "'?"):
         lista.remove(usuario)
         almacenamiento.guardar(RUTA_USUARIOS, lista)
-        print("Usuario eliminado.")
+        print("\U0001F5D1 Usuario eliminado.")
         logs.info("Usuario id " + str(id_buscado) + " eliminado")
     else:
         print("Operacion cancelada.")
