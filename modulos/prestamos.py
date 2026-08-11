@@ -52,7 +52,7 @@ def registrar():
     cantidad = utilidades.pedir_entero("Cantidad a prestar: ", 1)
 
     if cantidad > herramienta["cantidad"]:
-        print("No hay suficiente stock disponible.")
+        print("\U000026A0 No hay suficiente stock disponible.")
         logs.error("Stock insuficiente para préstamo de herramienta id " + str(id_herramienta) +
                    ": pidieron " + str(cantidad) + " y hay " + str(herramienta["cantidad"]))
         return
@@ -81,7 +81,7 @@ def registrar():
     almacenamiento.guardar(RUTA_PRESTAMOS, prestamos)
     almacenamiento.guardar(RUTA_HERRAMIENTAS, herramientas)
 
-    print("\nPréstamo #" + str(prestamo["id"]) + " registrado.")
+    print("\U0001F4E6 \nPréstamo #" + str(prestamo["id"]) + " registrado.")
     print("Fecha estimada de devolución: " + fecha_estimada)
     logs.info("Prestamo #" + str(prestamo["id"]) + ": " + str(cantidad) + " de '" +
               herramienta["nombre"] + "'", usuario=id_usuario)
@@ -131,7 +131,7 @@ def devolver():
 
     almacenamiento.guardar(RUTA_PRESTAMOS, prestamos)
 
-    print("Prestamo #" + str(id_prestamo) + " devuelto.")
+    print("\U000021A9 Prestamo #" + str(id_prestamo) + " devuelto.")
     logs.info("Prestamo #" + str(id_prestamo) + " devuelto",
               usuario=prestamo["usuario_id"])
 
