@@ -36,7 +36,7 @@ def crear_admin_inicial():
 
 def menu_herramientas(usuario):
     while True:
-        print("\n===== HERRAMIENTAS =====")
+        print("\n===== \U0001F527 HERRAMIENTAS =====")
         print("1. Crear")
         print("2. Listar")
         print("3. Buscar")
@@ -66,7 +66,7 @@ def menu_herramientas(usuario):
 
 def menu_crud_usuarios(usuario):
     while True:
-        print("\n===== USUARIOS =====")
+        print("\n===== \U0001F464 USUARIOS =====")
         print("1. Crear")
         print("2. Listar")
         print("3. Buscar")
@@ -96,7 +96,7 @@ def menu_crud_usuarios(usuario):
 
 def menu_prestamos(usuario):
     while True:
-        print("\n===== PRESTAMOS =====")
+        print("\n===== \U0001F4CB PRESTAMOS =====")
         print("1. Registrar prestamo")
         print("2. Registrar devolucion")
         print("3. Listar todos")
@@ -123,7 +123,7 @@ def menu_prestamos(usuario):
 
 def menu_reportes(usuario):
     while True:
-        print("\n===== REPORTES =====")
+        print("\n===== \U0001F4CA REPORTES =====")
         print("1. Herramientas con stock bajo")
         print("2. Prestamos activos y vencidos")
         print("3. Historial de un usuario")
@@ -154,7 +154,7 @@ def menu_reportes(usuario):
 def menu_admin(usuario):
     while True:
         print("\n" + "=" * 40)
-        print("  MENU ADMINISTRADOR - " + usuario["nombres"])
+        print("  \U0001F6E0 MENU ADMINISTRADOR - " + usuario["nombres"])
         print("=" * 40)
         print("1. Herramientas")
         print("2. Usuarios")
@@ -183,7 +183,7 @@ def menu_admin(usuario):
 def menu_usuarios(usuario):
     while True:
         print("\n" + "=" * 40)
-        print("  MENU USUARIOS - " + usuario["nombres"])
+        print("  \U0001F464 MENU USUARIOS - " + usuario["nombres"])
         print("=" * 40)
         print("1. Ver herramientas disponibles")
         print("2. Buscar herramienta")
@@ -236,7 +236,7 @@ def mostrar_mi_historial(usuario):
 
 def main():
     print("\n" + "=" * 40)
-    print("  PRESTAMO DE HERRAMIENTAS")
+    print("  \U0001F527 PRESTAMO DE HERRAMIENTAS")
     print("=" * 40)
 
     logs.info("Programa iniciado")
