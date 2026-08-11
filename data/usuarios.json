@@ -22,5 +22,13 @@
         "telefono": "413413412",
         "direccion": "cra 12",
         "tipo": "Usuario"
+    },
+    {
+        "id": 4,
+        "nombres": "Perencejito",
+        "apellidos": "Perez",
+        "telefono": "234132412",
+        "direccion": "Cra 22",
+        "tipo": "Usuario"
     }
 ]

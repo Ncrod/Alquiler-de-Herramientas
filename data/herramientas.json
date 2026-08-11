@@ -14,5 +14,13 @@
         "cantidad": 6,
         "estado": "Activa",
         "valor": 50000
+    },
+    {
+        "id": 3,
+        "nombre": "Pala",
+        "categoria": "Jardineria",
+        "cantidad": 8,
+        "estado": "Activa",
+        "valor": 120000
     }
 ]

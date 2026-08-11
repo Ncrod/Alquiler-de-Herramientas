@@ -39,3 +39,43 @@
 2026-08-08 10:18:29 - INFO - Prestamo #3: 2 de 'Taladro' - Usuario: 3
 2026-08-08 10:18:44 - INFO - Cierre de sesion - Usuario: 1
 2026-08-08 10:18:50 - INFO - Programa finalizado
+2026-08-10 17:52:42 - INFO - Programa iniciado
+2026-08-10 17:52:49 - INFO - Inicio de sesion - Usuario: 1
+2026-08-10 17:53:24 - INFO - Usuario 'Perencejito Perez' creado con id 4
+2026-08-10 17:54:24 - INFO - Usuario id 4 actualizado
+2026-08-10 17:54:46 - INFO - Cierre de sesion - Usuario: 1
+2026-08-10 17:54:55 - INFO - Programa finalizado
+2026-08-10 21:34:56 - INFO - Programa iniciado
+2026-08-10 21:36:38 - INFO - Inicio de sesion - Usuario: 1
+2026-08-10 21:39:22 - INFO - Herramienta 'Pala' creada con id 3
+2026-08-10 21:49:29 - INFO - Programa interrumpido con Ctrl+C
+2026-08-10 21:50:41 - INFO - Programa iniciado
+2026-08-10 21:50:42 - INFO - Inicio de sesion - Usuario: 1
+2026-08-10 21:50:55 - INFO - Programa interrumpido con Ctrl+C
+2026-08-10 21:51:38 - INFO - Programa iniciado
+2026-08-10 21:51:39 - INFO - Inicio de sesion - Usuario: 1
+2026-08-10 21:52:33 - INFO - Programa interrumpido con Ctrl+C
+2026-08-10 21:52:37 - INFO - Programa iniciado
+2026-08-10 21:52:39 - INFO - Inicio de sesion - Usuario: 1
+2026-08-10 21:53:00 - INFO - Programa interrumpido con Ctrl+C
+2026-08-10 21:53:05 - INFO - Programa iniciado
+2026-08-10 21:53:14 - INFO - Programa interrumpido con Ctrl+C
+2026-08-10 21:53:21 - INFO - Programa iniciado
+2026-08-10 21:53:27 - INFO - Programa interrumpido con Ctrl+C
+2026-08-10 21:53:48 - INFO - Programa iniciado
+2026-08-10 21:53:55 - INFO - Programa interrumpido con Ctrl+C
+2026-08-10 21:54:01 - INFO - Programa iniciado
+2026-08-10 21:54:03 - INFO - Inicio de sesion - Usuario: 1
+2026-08-10 21:55:11 - INFO - Programa interrumpido con Ctrl+C
+2026-08-11 18:37:58 - INFO - Programa iniciado
+2026-08-11 18:38:03 - INFO - Inicio de sesion - Usuario: 1
+2026-08-11 18:38:14 - INFO - Cierre de sesion - Usuario: 1
+2026-08-11 18:38:19 - INFO - Programa finalizado
+2026-08-11 18:39:59 - INFO - Programa iniciado
+2026-08-11 18:40:16 - INFO - Inicio de sesion - Usuario: 1
+2026-08-11 18:40:37 - INFO - Cierre de sesion - Usuario: 1
+2026-08-11 18:40:39 - INFO - Inicio de sesion - Usuario: 2
+2026-08-11 18:40:50 - INFO - Cierre de sesion - Usuario: 2
+2026-08-11 18:40:52 - INFO - Inicio de sesion - Usuario: 3
+2026-08-11 18:40:54 - INFO - Cierre de sesion - Usuario: 3
+2026-08-11 18:40:57 - INFO - Programa finalizado

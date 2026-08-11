@@ -7,6 +7,33 @@ from modulos import prestamos
 from modulos import reportes
 from modulos import permisos
 from config import RUTA_USUARIOS
+import os
+
+os.system("")  # Activa los colores ANSI en la consola de Windows
+
+RESET = "\033[0m"
+NEGRITA = "\033[1m"
+ROJO = "\033[31m"
+VERDE = "\033[32m"
+AMARILLO = "\033[33m"
+AZUL = "\033[34m"
+MAGENTA = "\033[35m"
+CYAN = "\033[36m"
+
+
+def titulo(texto, color=CYAN):
+    linea = "=" * 40
+    print("\n" + color + linea + RESET)
+    print(color + NEGRITA + "  " + texto + RESET)
+    print(color + linea + RESET)
+
+
+def opcion_menu(numero, texto, color=VERDE):
+    print(color + " " + str(numero) + ". " + RESET + texto)
+
+
+def volver(texto="Volver"):
+    print(ROJO + " 0. " + RESET + texto)
 
 
 def crear_admin_inicial():
@@ -36,15 +63,15 @@ def crear_admin_inicial():
 
 def menu_herramientas(usuario):
     while True:
-        print("\n===== HERRAMIENTAS =====")
-        print("1. Crear")
-        print("2. Listar")
-        print("3. Buscar")
-        print("4. Actualizar")
-        print("5. Eliminar / Inactivar")
-        print("0. Volver")
+        titulo("HERRAMIENTAS", AMARILLO)
+        opcion_menu(1, "Crear")
+        opcion_menu(2, "Listar")
+        opcion_menu(3, "Buscar")
+        opcion_menu(4, "Actualizar")
+        opcion_menu(5, "Eliminar / Inactivar")
+        volver()
 
-        opcion = utilidades.pedir_entero("Opcion: ", 0)
+        opcion = utilidades.pedir_entero(CYAN + "\nOpcion: " + RESET, 0)
 
         if opcion == 1:
             herramientas.crear()
@@ -59,22 +86,22 @@ def menu_herramientas(usuario):
         elif opcion == 0:
             return
         else:
-            print("Opcion invalida.")
+            print(ROJO + "Opcion invalida." + RESET)
 
         utilidades.pausar()
 
 
 def menu_crud_usuarios(usuario):
     while True:
-        print("\n===== USUARIOS =====")
-        print("1. Crear")
-        print("2. Listar")
-        print("3. Buscar")
-        print("4. Actualizar")
-        print("5. Eliminar")
-        print("0. Volver")
+        titulo("USUARIOS", MAGENTA)
+        opcion_menu(1, "Crear")
+        opcion_menu(2, "Listar")
+        opcion_menu(3, "Buscar")
+        opcion_menu(4, "Actualizar")
+        opcion_menu(5, "Eliminar")
+        volver()
 
-        opcion = utilidades.pedir_entero("Opcion: ", 0)
+        opcion = utilidades.pedir_entero(CYAN + "\nOpcion: " + RESET, 0)
 
         if opcion == 1:
             usuarios.crear()
@@ -89,21 +116,21 @@ def menu_crud_usuarios(usuario):
         elif opcion == 0:
             return
         else:
-            print("Opcion invalida.")
+            print(ROJO + "Opcion invalida." + RESET)
 
         utilidades.pausar()
 
 
 def menu_prestamos(usuario):
     while True:
-        print("\n===== PRESTAMOS =====")
-        print("1. Registrar prestamo")
-        print("2. Registrar devolucion")
-        print("3. Listar todos")
-        print("4. Solicitudes pendientes")
-        print("0. Volver")
+        titulo("PRESTAMOS", AZUL)
+        opcion_menu(1, "Registrar prestamo")
+        opcion_menu(2, "Registrar devolucion")
+        opcion_menu(3, "Listar todos")
+        opcion_menu(4, "Solicitudes pendientes")
+        volver()
 
-        opcion = utilidades.pedir_entero("Opcion: ", 0)
+        opcion = utilidades.pedir_entero(CYAN + "\nOpcion: " + RESET, 0)
 
         if opcion == 1:
             prestamos.registrar()
@@ -116,22 +143,22 @@ def menu_prestamos(usuario):
         elif opcion == 0:
             return
         else:
-            print("Opcion invalida.")
+            print(ROJO + "Opcion invalida." + RESET)
 
         utilidades.pausar()
 
 
 def menu_reportes(usuario):
     while True:
-        print("\n===== REPORTES =====")
-        print("1. Herramientas con stock bajo")
-        print("2. Prestamos activos y vencidos")
-        print("3. Historial de un usuario")
-        print("4. Herramientas mas solicitadas")
-        print("5. Usuarios mas activos")
-        print("0. Volver")
+        titulo("REPORTES", VERDE)
+        opcion_menu(1, "Herramientas con stock bajo")
+        opcion_menu(2, "Prestamos activos y vencidos")
+        opcion_menu(3, "Historial de un usuario")
+        opcion_menu(4, "Herramientas mas solicitadas")
+        opcion_menu(5, "Usuarios mas activos")
+        volver()
 
-        opcion = utilidades.pedir_entero("Opcion: ", 0)
+        opcion = utilidades.pedir_entero(CYAN + "\nOpcion: " + RESET, 0)
 
         if opcion == 1:
             reportes.stock_bajo()
@@ -146,23 +173,21 @@ def menu_reportes(usuario):
         elif opcion == 0:
             return
         else:
-            print("Opcion invalida.")
+            print(ROJO + "Opcion invalida." + RESET)
 
         utilidades.pausar()
 
 
 def menu_admin(usuario):
     while True:
-        print("\n" + "=" * 40)
-        print("  MENU ADMINISTRADOR - " + usuario["nombres"])
-        print("=" * 40)
-        print("1. Herramientas")
-        print("2. Usuarios")
-        print("3. Prestamos")
-        print("4. Reportes")
-        print("0. Cerrar sesion")
+        titulo("MENU ADMINISTRADOR - " + usuario["nombres"], CYAN)
+        opcion_menu(1, "Herramientas")
+        opcion_menu(2, "Usuarios")
+        opcion_menu(3, "Prestamos")
+        opcion_menu(4, "Reportes")
+        volver("Cerrar sesion")
 
-        opcion = utilidades.pedir_entero("Opcion: ", 0)
+        opcion = utilidades.pedir_entero(CYAN + "\nOpcion: " + RESET, 0)
 
         if opcion == 1:
             menu_herramientas(usuario)
@@ -176,23 +201,21 @@ def menu_admin(usuario):
             logs.info("Cierre de sesion", usuario=usuario["id"])
             return
         else:
-            print("Opcion invalida.")
+            print(ROJO + "Opcion invalida." + RESET)
             utilidades.pausar()
 
 
 def menu_usuarios(usuario):
     while True:
-        print("\n" + "=" * 40)
-        print("  MENU USUARIOS - " + usuario["nombres"])
-        print("=" * 40)
-        print("1. Ver herramientas disponibles")
-        print("2. Buscar herramienta")
-        print("3. Solicitar una herramienta")
-        print("4. Ver mis solicitudes")
-        print("5. Ver mi historial de prestamos")
-        print("0. Cerrar sesion")
+        titulo("MENU USUARIO - " + usuario["nombres"], MAGENTA)
+        opcion_menu(1, "Ver herramientas disponibles")
+        opcion_menu(2, "Buscar herramienta")
+        opcion_menu(3, "Solicitar una herramienta")
+        opcion_menu(4, "Ver mis solicitudes")
+        opcion_menu(5, "Ver mi historial de prestamos")
+        volver("Cerrar sesion")
 
-        opcion = utilidades.pedir_entero("Opcion: ", 0)
+        opcion = utilidades.pedir_entero(CYAN + "\nOpcion: " + RESET, 0)
 
         if opcion == 1:
             herramientas.listar()
@@ -208,7 +231,7 @@ def menu_usuarios(usuario):
             logs.info("Cierre de sesion", usuario=usuario["id"])
             return
         else:
-            print("Opcion invalida.")
+            print(ROJO + "Opcion invalida." + RESET)
 
         utilidades.pausar()
 
@@ -235,9 +258,7 @@ def mostrar_mi_historial(usuario):
 
 
 def main():
-    print("\n" + "=" * 40)
-    print("  PRESTAMO DE HERRAMIENTAS")
-    print("=" * 40)
+    titulo("PRESTAMO DE HERRAMIENTAS", CYAN)
 
     logs.info("Programa iniciado")
     crear_admin_inicial()
