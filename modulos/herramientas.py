@@ -27,7 +27,7 @@ def crear():
     lista.append(herramienta)
     almacenamiento.guardar(RUTA_HERRAMIENTAS, lista)
 
-    print("Herramienta creada con id " + str(herramienta["id"]) + ".")
+    print("\U00002705 Herramienta creada con id " + str(herramienta["id"]) + ".")
     logs.info("Herramienta '" + nombre + "' creada con id " + str(herramienta["id"]))
 
 
@@ -43,7 +43,7 @@ def listar():
     lista = almacenamiento.cargar(RUTA_HERRAMIENTAS)
 
     if len(lista) == 0:
-        print("\nNo hay herramientas registradas.")
+        print("\U0001F4EC \nNo hay herramientas registradas.")
         return
 
     print("\n--- HERRAMIENTAS ---")
@@ -86,7 +86,7 @@ def actualizar():
     herramienta = utilidades.buscar_por_id(lista, id_buscado)
 
     if herramienta is None:
-        print("No existe una herramienta con ese id.")
+        print("\U0000274C No existe una herramienta con ese id.")
         logs.error("Intento de actualizar herramienta inexistente id " + str(id_buscado))
         return
 
@@ -102,7 +102,7 @@ def actualizar():
 
     almacenamiento.guardar(RUTA_HERRAMIENTAS, lista)
 
-    print("Herramienta actualizada.")
+    print("\U0000270F Herramienta actualizada.")
     logs.info("Herramienta id " + str(id_buscado) + " actualizada")
 
 
@@ -129,14 +129,14 @@ def eliminar():
     if opcion == 1:
         herramienta["estado"] = ESTADO_INACTIVA
         almacenamiento.guardar(RUTA_HERRAMIENTAS, lista)
-        print("Herramienta inactivada.")
+        print("\U0001F6AB Herramienta inactivada.")
         logs.info("Herramienta id " + str(id_buscado) + " inactivada")
 
     elif opcion == 2:
         if utilidades.confirmar("Seguro que desea eliminar '" + herramienta["nombre"] + "'?"):
             lista.remove(herramienta)
             almacenamiento.guardar(RUTA_HERRAMIENTAS, lista)
-            print("Herramienta eliminada.")
+            print("\U0001F5D1 Herramienta eliminada.")
             logs.info("Herramienta id " + str(id_buscado) + " eliminada")
         else:
             print("Operacion cancelada.")
