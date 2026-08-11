@@ -29,7 +29,7 @@ def iniciar_sesion():
         logs.error("Intento de inicio de sesion con id inexistente " + str(id_usuario))
         return None
 
-    print("\nBienvenido, " + usuario["nombres"] + " (" + usuario["tipo"] + ").")
+    print("\U0001F44B \nBienvenido, " + usuario["nombres"] + " (" + usuario["tipo"] + ").")
     logs.info("Inicio de sesion", usuario=id_usuario)
     return usuario
 
@@ -44,7 +44,7 @@ def requiere_admin(usuario):
     if es_admin(usuario):
         return True
 
-    print("\nNo tiene permisos para realizar esta accion.")
+    print("\U0001F512 \nNo tiene permisos para realizar esta accion.")
     print("Solo el administrador puede hacerlo.")
     logs.advertencia("Intento de acceso sin permisos", usuario=usuario["id"])
     return False
@@ -98,7 +98,7 @@ def crear_solicitud(usuario):
     solicitudes.append(solicitud)
     almacenamiento.guardar(RUTA_SOLICITUDES, solicitudes)
 
-    print("\nSolicitud #" + str(solicitud["id"]) + " enviada.")
+    print("\U0001F4E8 \nSolicitud #" + str(solicitud["id"]) + " enviada.")
     print("Espere la aprobacion del administrador.")
     logs.info("Solicitud #" + str(solicitud["id"]) + " de '" + herramienta["nombre"] + "'",
               usuario=usuario["id"])
@@ -184,12 +184,12 @@ def aprobar_solicitud(usuario):
 
     if opcion == 1:
         solicitud["estado"] = "Aprobada"
-        print("Solicitud aprobada. Ahora registre el prestamo desde el menu.")
+        print("\U00002705 Solicitud aprobada. Ahora registre el prestamo desde el menu.")
         logs.info("Solicitud #" + str(id_solicitud) + " aprobada", usuario=usuario["id"])
 
     elif opcion == 2:
         solicitud["estado"] = "Rechazada"
-        print("Solicitud rechazada.")
+        print("\U0000274C Solicitud rechazada.")
         logs.info("Solicitud #" + str(id_solicitud) + " rechazada", usuario=usuario["id"])
 
     else:
