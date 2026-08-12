@@ -79,3 +79,52 @@
 2026-08-11 18:40:52 - INFO - Inicio de sesion - Usuario: 3
 2026-08-11 18:40:54 - INFO - Cierre de sesion - Usuario: 3
 2026-08-11 18:40:57 - INFO - Programa finalizado
+2026-08-11 18:47:02 - INFO - Programa iniciado
+2026-08-11 18:47:08 - INFO - Inicio de sesion - Usuario: 1
+2026-08-11 18:47:31 - INFO - Cierre de sesion - Usuario: 1
+2026-08-11 18:47:33 - INFO - Programa finalizado
+2026-08-11 18:50:25 - INFO - Programa iniciado
+2026-08-11 18:50:43 - INFO - Inicio de sesion - Usuario: 1
+2026-08-11 18:51:20 - INFO - Cierre de sesion - Usuario: 1
+2026-08-11 18:51:26 - ERROR - Intento de inicio de sesion con id inexistente 99
+2026-08-11 18:51:43 - INFO - Inicio de sesion - Usuario: 1
+2026-08-11 18:52:06 - INFO - Herramienta 'Sierra' creada con id 4
+2026-08-11 18:54:00 - INFO - Herramienta 'Llave inglesa' creada con id 5
+2026-08-11 18:55:13 - INFO - Herramienta 'Tornillo' creada con id 6
+2026-08-11 18:56:31 - INFO - Programa interrumpido con Ctrl+C
+2026-08-11 18:56:44 - INFO - Programa iniciado
+2026-08-11 18:56:55 - INFO - Inicio de sesion - Usuario: 2
+2026-08-11 18:57:44 - INFO - Cierre de sesion - Usuario: 2
+2026-08-11 18:57:46 - INFO - Inicio de sesion - Usuario: 1
+2026-08-11 18:58:03 - ERROR - Intento de actualizar herramienta inexistente id 99
+2026-08-11 18:58:31 - INFO - Herramienta id 2 inactivada
+2026-08-11 18:59:46 - INFO - Cierre de sesion - Usuario: 1
+2026-08-11 18:59:48 - INFO - Inicio de sesion - Usuario: 1
+2026-08-11 19:00:18 - INFO - Usuario 'Ana Gomez' creado con id 5
+2026-08-11 19:02:28 - INFO - Prestamo #4: 50 de 'Tornillo' - Usuario: 4
+2026-08-11 19:03:00 - ERROR - Usuario con id 10 no encontrado al intentar crear un préstamo
+2026-08-11 19:03:31 - INFO - Prestamo #4 devuelto - Usuario: 4
+2026-08-11 19:04:31 - INFO - Prestamo #5: 50 de 'Tornillo' - Usuario: 4
+2026-08-11 19:05:34 - INFO - Prestamo #5 devuelto - Usuario: 4
+2026-08-11 19:06:27 - ERROR - Stock insuficiente para préstamo de herramienta id 5: pidieron 5 y hay 3
+2026-08-11 19:06:36 - INFO - Cierre de sesion - Usuario: 1
+2026-08-11 19:06:38 - INFO - Inicio de sesion - Usuario: 1
+2026-08-11 19:07:06 - INFO - Cierre de sesion - Usuario: 1
+2026-08-11 19:07:11 - INFO - Inicio de sesion - Usuario: 3
+2026-08-11 19:07:22 - INFO - Solicitud #4 de 'Tornillo' - Usuario: 3
+2026-08-11 19:07:33 - INFO - Cierre de sesion - Usuario: 3
+2026-08-11 19:07:34 - INFO - Inicio de sesion - Usuario: 1
+2026-08-11 19:07:48 - INFO - Solicitud #4 aprobada - Usuario: 1
+2026-08-11 19:08:09 - INFO - Programa interrumpido con Ctrl+C
+2026-08-11 19:08:25 - INFO - Programa iniciado
+2026-08-11 19:08:27 - INFO - Inicio de sesion - Usuario: 1
+2026-08-11 19:12:20 - INFO - Cierre de sesion - Usuario: 1
+2026-08-11 19:12:22 - INFO - Programa finalizado
+2026-08-11 19:20:40 - INFO - Programa iniciado
+2026-08-11 19:21:44 - ADVERTENCIA - Pin de administrador incorrecto - Usuario: 1
+2026-08-11 19:21:48 - ADVERTENCIA - Pin de administrador incorrecto - Usuario: 1
+2026-08-11 19:21:53 - ADVERTENCIA - Pin de administrador incorrecto - Usuario: 1
+2026-08-11 19:21:53 - ERROR - Acceso de administrador bloqueado por pin invalido (id 1)
+2026-08-11 19:22:06 - INFO - Inicio de sesion - Usuario: 1
+2026-08-11 19:22:17 - INFO - Cierre de sesion - Usuario: 1
+2026-08-11 19:22:21 - INFO - Programa finalizado

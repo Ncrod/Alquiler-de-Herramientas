@@ -1,6 +1,8 @@
+import getpass
 from datetime import datetime
 
-from config import RUTA_USUARIOS, RUTA_SOLICITUDES, RUTA_HERRAMIENTAS
+from config import (RUTA_USUARIOS, RUTA_SOLICITUDES, RUTA_HERRAMIENTAS,
+                    PIN_ADMIN, INTENTOS_PIN)
 from modulos import almacenamiento
 from modulos import utilidades
 from modulos import logs
@@ -29,9 +31,33 @@ def iniciar_sesion():
         logs.error("Intento de inicio de sesion con id inexistente " + str(id_usuario))
         return None
 
+    if es_admin(usuario) and not validar_pin(usuario):
+        return None
+
     print("\U0001F44B \nBienvenido, " + usuario["nombres"] + " (" + usuario["tipo"] + ").")
     logs.info("Inicio de sesion", usuario=id_usuario)
     return usuario
+
+
+def validar_pin(usuario):
+    print("\n\U0001F510 Este usuario es administrador. Debe ingresar el pin de seguridad.")
+
+    intentos = 0
+    while intentos < INTENTOS_PIN:
+        pin = getpass.getpass("Pin: ").strip()
+
+        if pin == PIN_ADMIN:
+            return True
+
+        intentos = intentos + 1
+        restantes = INTENTOS_PIN - intentos
+        print("\U0000274C Pin incorrecto. Intentos restantes: " + str(restantes))
+        logs.advertencia("Pin de administrador incorrecto", usuario=usuario["id"])
+
+    print("\U0001F512 Acceso denegado. Se agotaron los intentos.")
+    logs.error("Acceso de administrador bloqueado por pin invalido (id " +
+               str(usuario["id"]) + ")")
+    return False
 
 
 def es_admin(usuario):

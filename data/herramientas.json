@@ -12,7 +12,7 @@
         "nombre": "Martillo",
         "categoria": "Construccion",
         "cantidad": 6,
-        "estado": "Activa",
+        "estado": "Inactiva",
         "valor": 50000
     },
     {
@@ -22,5 +22,29 @@
         "cantidad": 8,
         "estado": "Activa",
         "valor": 120000
+    },
+    {
+        "id": 4,
+        "nombre": "Sierra",
+        "categoria": "Construccion",
+        "cantidad": 5,
+        "estado": "Activa",
+        "valor": 120000
+    },
+    {
+        "id": 5,
+        "nombre": "Llave inglesa",
+        "categoria": "Construccion",
+        "cantidad": 3,
+        "estado": "Activa",
+        "valor": 50000
+    },
+    {
+        "id": 6,
+        "nombre": "Tornillo",
+        "categoria": "Construccion",
+        "cantidad": 100,
+        "estado": "Activa",
+        "valor": 1200
     }
 ]

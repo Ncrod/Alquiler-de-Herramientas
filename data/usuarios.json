@@ -30,5 +30,13 @@
         "telefono": "234132412",
         "direccion": "Cra 22",
         "tipo": "Usuario"
+    },
+    {
+        "id": 5,
+        "nombres": "Ana",
+        "apellidos": "Gomez",
+        "telefono": "524412431",
+        "direccion": "Calle 34",
+        "tipo": "Usuario"
     }
 ]

@@ -31,5 +31,27 @@
         "fecha_devolucion": null,
         "estado": "Activo",
         "observaciones": "Entregar miercoles"
+    },
+    {
+        "id": 4,
+        "usuario_id": 4,
+        "herramienta_id": 6,
+        "cantidad": 50,
+        "fecha_inicio": "2026-08-11",
+        "fecha_estimada": "2026-08-18",
+        "fecha_devolucion": "2026-08-11",
+        "estado": "Devuelto",
+        "observaciones": "n/a"
+    },
+    {
+        "id": 5,
+        "usuario_id": 4,
+        "herramienta_id": 6,
+        "cantidad": 50,
+        "fecha_inicio": "2026-08-11",
+        "fecha_estimada": "2026-08-18",
+        "fecha_devolucion": "2026-08-11",
+        "estado": "Devuelto",
+        "observaciones": ""
     }
 ]

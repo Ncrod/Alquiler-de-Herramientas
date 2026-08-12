@@ -15,6 +15,10 @@ STOCK_MINIMO = 3
 # Constantes de usuarios
 TIPOS_USUARIO = ["Usuario", "Administrador"]
 
+# Seguridad: pin unico para todos los administradores
+PIN_ADMIN = "admin123"
+INTENTOS_PIN = 3
+
 # Constantes de prestamos
 ESTADOS_PRESTAMO = ["Activo", "Devuelto"]
 DIAS_PRESTAMO = 7

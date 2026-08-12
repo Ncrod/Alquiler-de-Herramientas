@@ -10,7 +10,7 @@ from config import RUTA_USUARIOS
 import os
 import sys
 
-os.system("")  # Activa los colores ANSI en la consola de Windows
+os.system("")  
 
 # Evita UnicodeEncodeError con los iconos en consolas de Windows
 if hasattr(sys.stdout, "reconfigure"):
